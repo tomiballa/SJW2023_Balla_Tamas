@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+:root {
+  --green: #5d6a09;
+  --darker-green: #414a04;
+  --red: #81150b;
+  --yellow: #ffeccb;
+
+  --default-font-size: 14;
+}
+
+* {
+  font-size: var(--default-font-size);
+}
+
+nav {
+  background-color: var(--red) !important;
+}
+
+body {
+  background: url('../img/bg_pizza.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.893);
+}
+
+h1 {
+  font-size: calc(var(--default-font-size) * 7px) !important;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+h2 {
+  font-size: calc(var(--default-font-size) * 3px) !important;
+}
+
+h1,
+h2 {
+  font-family: 'Cabin Sketch', cursive;
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+}
+
+ul {
+  list-style-image: url('../img/pizza_icon.png');
+  line-height: 30px;
+}
+
+span {
+  font-weight: bold;
+  color: var(--darker-green);
+  font-variant: small-caps;
+}
+
+p:not(.extras) {
+  line-height: 2;
+  text-indent: 15px;
+}
+
+.bordered {
+  border: 2px double var(--green);
+  background-color: var(--yellow);
+  padding: 20px;
+  margin: auto;
+}
+
+footer {
+  background-color: var(--red);
+  text-align: center;
+}
+
+footer a {
+  color: white !important;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer a:hover {
+  background-color: black;
+}
